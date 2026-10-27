@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FLOWLOGIX B2B2G TRADE HUB - ZLECAf UEMOA TOGO</title>
+<style>
+:root{--gold:#f5b400;--dark:#0f172a;--dark2:#1e293b;--green:#10b981}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui}
+body{background:var(--dark);color:#e2e8f0}
+.header{position:sticky;top:0;z-index:99;background:rgba(15,23,42,.95);backdrop-filter:blur(10px);border-bottom:1px solid #334155;padding:12px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;gap:10px;align-items:center}.logo-icon{width:42px;height:42px;background:var(--gold);border-radius:10px;display:grid;place-items:center;font-size:22px}
+.logo b{font-size:18px;color:#fff;letter-spacing:.5px}.logo span{font-size:10px;color:#94a3b8;letter-spacing:2px}
+.btn-gold{background:var(--gold);color:#000;font-weight:800;padding:10px 18px;border-radius:10px;border:none;cursor:pointer}
+.tabs{display:flex;gap:8px;padding:12px;overflow:auto;background:var(--dark2);border-bottom:1px solid #334155}
+.tab{padding:8px 14px;border-radius:20px;background:#0f172a;border:1px solid #334155;white-space:nowrap;cursor:pointer;font-size:13px}
+.tab.active{background:var(--gold);color:#000;font-weight:700;border-color:var(--gold)}
+.hero{padding:20px;display:grid;gap:16px}
+.card{background:linear-gradient(135deg,#1e293b,#0f172a);border:1px solid #334155;border-radius:16px;padding:18px}
+.check{ display:flex;gap:12px;align-items:center;margin:12px 0;font-size:14px}.check i{width:26px;height:26px;border-radius:50%;background:rgba(16,185,129,.15);border:1px solid var(--green);display:grid;place-items:center;color:var(--green)}
+.btn-xl{background:var(--gold);color:#000;font-weight:900;padding:14px;width:100%;border-radius:12px;border:none;margin:10px 0;cursor:pointer;font-size:15px;display:flex;justify-content:center;gap:10px}
+.btn-dark{border:1px solid #475569;background:transparent;color:#cbd5e1;padding:12px;width:100%;border-radius:12px;cursor:pointer}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kpi{border:1px solid #334155;border-radius:12px;padding:12px;background:#0f172a}
+.kpi b{color:var(--gold)} .kpi small{color:#94a3b8;font-size:10px}
+input,select{width:100%;padding:12px;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#fff;margin:6px 0}
+.fiche{background:#fff;color:#000;border-radius:12px;padding:14px;font-size:12px;margin-top:10px;white-space:pre-wrap}
+.port-img{width:100%;height:220px;object-fit:cover;border-radius:16px;margin-top:12px;border:1px solid #334155}
+.badge{display:inline-block;padding:4px 10px;border-radius:20px;background:rgba(245,180,0,.15);color:var(--gold);font-size:10px;font-weight:700;border:1px solid var(--gold)}
+@media(min-width:900px){.hero{grid-template-columns:1.1fr .9fr} .grid2{grid-template-columns:1fr 1fr 1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo"><div class="logo-icon">🛡️</div><div><b>FLOWLOGIX</b><br><span>B2B2G TRADE HUB</span></div></div>
+<button class="btn-gold" onclick="show('passeport')">+ Émettre Passeport Lot</button>
+</div>
+
+<div class="tabs">
+<div class="tab active" onclick="show('apercu',this)">Aperçu</div>
+<div class="tab" onclick="show('corridors',this)">Corridors</div>
+<div class="tab" onclick="show('fintech',this)">Fintech</div>
+<div class="tab" onclick="show('douanes',this)">Douanes</div>
+<div class="tab" onclick="show('business',this)">Business</div>
+<div class="tab" onclick="show('barometre',this)">Baromètre</div>
+</div>
+
+<!-- APERCU -->
+<div id="apercu" class="hero">
+<div class="card">
+<h2 style="font-size:22px;margin-bottom:6px">Puissance Logistique du Corridor<br>TOGO-GHANA-BENIN pour les États</h2>
+<p style="color:#94a3b8;font-size:13px;margin-bottom:12px">Plateforme ZLECAf / UEMOA - Passeport Numérique - Paiement Séquestre - Affacturage 15min</p>
+
+<div class="check"><i>✓</i> Passeport Numérique ZLECAf / UEMOA</div>
+<div class="check"><i>✓</i> Paiements & Compte Séquestre Automatisé</div>
+<div class="check"><i>✓</i> Affacturage PME décaissé en 15 minutes</div>
+<div class="check"><i>✓</i> Baromètre Macro-Économique National</div>
+
+<button class="btn-xl" onclick="show('passeport')">Émettre un Passeport de Lot →</button>
+<button class="btn-dark" onclick="show('fintech')">Tester le Compte Séquestre</button>
+
+<div class="grid2" style="margin-top:14px">
+<div class="kpi"><small>CORRIDOR ACTIF</small><br><b>Lomé → Ouaga → Niamey</b><br><small>247 lots ce mois</small></div>
+<div class="kpi"><small>VOLUME ZLECAf</small><br><b>€2.4M</b><br><small>+18% / mois dernier</small></div>
+<div class="kpi"><small>DÉLAI DOUANE</small><br><b>2h14 avg</b><br><small>-42% avec Passeport</small></div>
+<div class="kpi"><small>PME FINANCÉES</small><br><b>133</b><br><small>Affacturage instantané</small></div>
+</div>
+</div>
+
+<div>
+<div class="card">
+<span class="badge">LIVE PORT LOMÉ</span>
+<img class="port-img" src="https://images.unsplash.com/photo-1494412651409-8963ce7935b4?w=800" alt="port">
+<div style="margin-top:10px;font-size:12px;color:#94a3b8">International Border Crossing - Lomé Autonomous Port - 14 camions en attente - Temps moyen dédouanement: 2h14 avec FLOWLOGIX vs 8h sans</div>
+</div>
+<div class="card" style="margin-top:12px">
+<h3>Derniers Passeports Émis</h3>
+<div id="lastPass" class="fiche">GSIA-FLOW-2026-001 - Karité 20T - Lomé→Accra - €18,500 - Validé ZLECAf
+GSIA-FLOW-2026-002 - Anacarde 15T - Lomé→Cotonou - €22,000 - En transit
+GSIA-FLOW-2026-003 - Textile Wax 5T - Lomé→Abidjan - €9,400 - Séquestre libéré</div>
+</div>
+</div>
+</div>
+
+<!-- PASSEPORT -->
+<div id="passeport" class="hero" style="display:none">
+<div class="card">
+<h3>🛡️ Émettre Passeport Numérique ZLECAf / UEMOA</h3>
+<label>Produit</label><input id="prod" value="Beurre de Karité Bio 20T">
+<label>Origine → Destination</label><div style="display:flex;gap:6px"><input id="orig" value="Lomé, Togo"><input id="dest" value="Accra, Ghana"></div>
+<label>Valeur €</label><input id="val" type="number" value="18500">
+<label>Corridor UEMOA</label><select id="corr"><option>Lomé-Ouaga-Niamey (TO-BF-NE)</option><option>Lomé-Accra-Abidjan (TO-GH-CI)</option><option>Lomé-Cotonou-Lagos (TO-BJ-NG)</option></select>
+<button class="btn-xl" onclick="genPass()">GÉNÉRER PASSEPORT ZLECAf →</button>
+<div id="resPass" class="fiche">Remplis et clique générer - QR + Hash Blockchain + Certificat UEMOA inclus</div>
+</div>
+<div class="card">
+<h3>Avantage Passeport FLOWLOGIX</h3>
+<p style="font-size:13px;line-height:1.6">
+✓ <b>-42% temps douane</b> : 2h14 vs 8h<br>
+✓ <b>Certificat ZLECAf</b> reconnu 43 pays<br>
+✓ <b>QR + Blockchain</b> anti-fraude<br>
+✓ <b>Compte séquestre</b> automatique<br>
+✓ <b>Assurance corridor</b> incluse<br><br>
+<span class="badge">Conforme UEMOA 2026 + ZLECAf + CEDEAO</span>
+</p>
+</div>
+</div>
+
+<!-- FINTECH -->
+<div id="fintech" class="hero" style="display:none">
+<div class="card">
+<h3>💰 Fintech - Compte Séquestre & Affacturage PME 15min</h3>
+<label>Montant à séquestrer €</label><input id="seqMont" value="18500" type="number">
+<label>PME Bénéficiaire</label><input id="pme" value="GSIA AGRO - EPP Kongbane Supplier">
+<label>Commission FLOWLOGIX %</label><input id="comm" value="3.5" type="number">
+<button class="btn-xl" onclick="calcSeq()">CALCULER SÉQUESTRE + AFFACTURAGE →</button>
+<div id="resSeq" class="fiche"></div>
+</div>
+<div class="card">
+<h3>Barème Affacturage Instantané</h3>
+<table style="width:100%;font-size:12px;border-collapse:collapse"><tr style="border-bottom:1px solid #334155"><th>Montant</th><th>Délai</th><th>Taux</th></tr><tr><td>< €10k</td><td>15 min</td><td>3.5%</td></tr><tr><td>€10k-50k</td><td>15 min</td><td>2.8%</td></tr><tr><td>> €50k</td><td>30 min</td><td>2.2%</td></tr></table>
+<p style="font-size:11px;margin-top:8px;color:#94a3b8">Flooz / TMoney / Wave / Virement bancaire UEMOA instantané - KYC UEMOA intégré</p>
+</div>
+</div>
+
+<!-- CORRIDORS -->
+<div id="corridors" class="hero" style="display:none">
+<div class="card"><h3>🚛 Corridors UEMOA - Temps Réel</h3><div class="fiche" id="corrLive">Lomé → Ouaga: 12h30 - 3 contrôles - Fluides
+Lomé → Niamey: 18h45 - 5 contrôles - 1 ralentissement à Fada
+Lomé → Accra: 6h15 - 2 contrôles - Fluide
+Lomé → Cotonou: 4h20 - 1 contrôle - Fluide
+Lomé → Lagos: 14h00 - 4 contrôles - Dense frontière Nigeria</div><button class="btn-dark" onclick="refreshCorr()">Actualiser Live</button></div>
+<div class="card"><h3>Optimiseur Corridor IA</h3><input id="optOrig" value="Lomé"><input id="optDest" value="Ouagadougou"><button class="btn-xl" onclick="optCorr()">OPTIMISER TRAJET →</button><div id="resOpt" class="fiche"></div></div>
+</div>
+
+<!-- DOUANES -->
+<div id="douanes" class="hero" style="display:none">
+<div class="card"><h3>🛃 Douanes UEMOA - Pré-dédouanement</h3><label>Code SH</label><input id="sh" value="1515 - Graisses végétales Karité"><label>Poids / Valeur</label><input id="poids" value="20T / €18500"><button class="btn-xl" onclick="calcDouane()">CALCUL DROITS UEMOA →</button><div id="resDouane" class="fiche"></div></div>
+<div class="card"><h3>Documents Auto-générés</h3><div class="fiche">✓ Certificat d'Origine UEMOA
+✓ EUR.1 ZLECAf
+✓ Phytosanitaire
+✓ Fiche de Séquestre
+✓ QR Passeport FLOWLOGIX
+✓ Facture UEMOA normalisée</div></div>
+</div>
+
+<!-- BAROMETRE -->
+<div id="barometre" class="hero" style="display:none">
+<div class="card"><h3>📊 Baromètre Macro-Économique National Togo</h3><div class="grid2"><div class="kpi"><small>Karité T</small><br><b>€925</b><br><small>+4.2%</small></div><div class="kpi"><small>Anacarde T</small><br><b>€1,450</b><br><small>-1.1%</small></div><div class="kpi"><small>Coton T</small><br><b>€1,820</b><br><small>+2.8%</small></div><div class="kpi"><small>Transit Lome</small><br><b>€4.2M/j</b><br><small>+12%</small></div></div><div class="fiche" style="margin-top:10px">Tendance: Hausse demande UEMOA + Forte demande Ghana karité + Baisse anacarde saisonnière + Corridor Lomé-Ouaga surchargé - Conseiller passage via Benin pour Niamey cette semaine</div></div>
+</div>
+
+<div id="business" class="hero" style="display:none">
+<div class="card"><h3>🏢 Business - Clients Gros Comptes</h3><div class="fiche">Pack PME: 25.000F/mois - 10 passeports/mois + séquestre + affacturage
+Pack Transitaires: 75.000F/mois - 50 passeports + API + Douane auto
+Pack État / Port / Douane: 250.000F/mois - Illimité + Baromètre + Support 24h + Formation UEMOA
+Contact: FLOWLOGIX Togo - +228 - GSIA Studio</div><button class="btn-xl" onclick="alert('Demande envoyée - On te rappelle')">DEMANDER DEVIS GROS COMPTE →</button></div>
+</div>
+
+<script>
+function show(id,el){
+['apercu','corridors','fintech','douanes','business','barometre','passeport'].forEach(x=>{let d=document.getElementById(x); if(d) d.style.display='none';});
+document.getElementById(id).style.display='grid';
+if(el){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+}
+function genPass(){
+let p=document.getElementById('prod').value, o=document.getElementById('orig').value, d=document.getElementById('dest').value, v=document.getElementById('val').value, c=document.getElementById('corr').value;
+let hash='FLW-'+Date.now().toString(36).toUpperCase()+'-ZLECAF';
+let qr=`https://flowlogix.tg/verify/${hash}`;
+document.getElementById('resPass').innerText=`✅ PASSEPORT ZLECAf / UEMOA ÉMIS
+Ref: ${hash}
+Produit: ${p}
+Trajet: ${o} → ${d}
+Corridor: ${c}
+Valeur: €${v}
+QR: ${qr}
+Blockchain: 0x${Math.random().toString(16).slice(2,10)}... validé
+Certificats: Origine UEMOA + EUR.1 + Phytosanitaire + Séquestre
+Statut: VALIDE - Dédouanement rapide 2h14
+Lien vérif: ${qr}
+Facture: FLOWLOGIX 3.5% = €${(v*0.035).toFixed(2)}
+`;
+document.getElementById('lastPass').innerText=hash+' - '+p+' - '+o+'→'+d+' - €'+v+' - Validé ZLECAf\n'+document.getElementById('lastPass').innerText;
+}
+function calcSeq(){
+let m=parseFloat(document.getElementById('seqMont').value)||0, com=parseFloat(document.getElementById('comm').value)||3.5;
+let frais=m*com/100, net=m-frais, tva=frais*0.18;
+document.getElementById('resSeq').innerText=`💰 COMPTE SÉQUESTRE AUTOMATISÉ
+Montant bloqué: €${m}
+Commission FLOWLOGIX ${com}%: €${frais.toFixed(2)} (TVA €${tva.toFixed(2)})
+Net versé PME après livraison: €${net.toFixed(2)}
+Décaissement Affacturage: 15 minutes après validation QR douane
+Mode paiement: Flooz / TMoney / Wave / Virement UEMOA
+Sécurité: Fonds bloqués chez Ecobank Séquestre - Libération auto si QR Passeport validé aux 2 frontières
+Ref: SEQ-${Date.now()}
+`;
+}
+function calcDouane(){
+let sh=document.getElementById('sh').value;
+document.getElementById('resDouane').innerText=`🛃 DROITS UEMOA CALCULÉS
+Code: ${sh}
+TEC UEMOA: 10% + PCS 1% + PC 0.5% + TVA 18% (sur CIF+ droits)
+Estimation pour €18500:
+Droit douane: €1850
+PCS/PC: €277.5
+TVA: €3712.95
+TOTAL: ~€5840.45
+Avec Passeport FLOWLOGIX: Pré-dédouanement - File prioritaire - -42% temps
+Documents générés auto: Certificat Origine + EUR.1
+`;
+}
+function refreshCorr(){document.getElementById('corrLive').innerText='[Live '+new Date().toLocaleTimeString()+']\n'+document.getElementById('corrLive').innerText}
+function optCorr(){let o=document.getElementById('optOrig').value, d=document.getElementById('optDest').value; document.getElementById('resOpt').innerText=`IA Corridor: ${o} → ${d}\nMeilleur trajet: Via corridor Est (Benin) - Évite Fada - Gain 2h10 - Économie €120 carburant - Risque contrôle réduit - Recommandé: Départ 05h00`}
+show('apercu');
+</script>
+</body>
+  </html>
