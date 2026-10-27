@@ -1,16 +1,17 @@
 {
   "name": "FLOWLOGIX B2B2G TRADE HUB",
   "short_name": "FLOWLOGIX",
-  "description": "Passeport ZLECAf UEMOA - Compte Sequestre - Affacturage 15min",
-  "start_url": "/flowlogix/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#f5b400",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3190/3190459.png",
+      "src": "./icon-fl.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
