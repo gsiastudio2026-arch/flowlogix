@@ -29,4 +29,13 @@ function closePay(e){if(e.target.id==='payModal')e.target.style.display='none';}
 function copyNum(n){navigator.clipboard.writeText(n);alert('Numéro '+n+' copié! Colle dans *155# ou *145#');}
 let deferredPrompt; window.addEventListener('beforeinstallprompt',(e)=>{e.preventDefault();deferredPrompt=e;});
 function install(){if(deferredPrompt){deferredPrompt.prompt();}else{alert('Pour installer: Clique ⋮ en haut à droite Chrome → Installer l\'application ou Ajouter à l\'écran d\'accueil');}}
-</script></body></html>
+</script></body><div id="welcome" style="position:fixed;inset:0;z-index:10000;background:#0f172a;display:grid;place-items:center;transition:.8s">
+  <div style="text-align:center;padding:20px">
+    <img src="./icon-fl.png" style="width:110px;height:110px;border-radius:24px;box-shadow:0 0 30px #f5b40050">
+    <h1 style="color:#f5b400;font-size:36px;margin-top:16px;font-family:serif">Bienvenue</h1>
+    <p style="color:#f5b400;letter-spacing:2px;margin:6px 0">FLOWLOGIX B2B2G TRADE HUB</p>
+    <p style="color:#94a3b8;font-size:11px;margin-bottom:18px">Passeport Numérique - Compte Séquestre - Affacturage 15min</p>
+    <button onclick="document.getElementById('welcome').style.opacity=0;setTimeout(()=>document.getElementById('welcome').remove(),800)" style="background:#f5b400;color:#000;font-weight:900;padding:12px 28px;border-radius:12px;border:none">COMMENCER →</button>
+  </div>
+</div>
+<script>setTimeout(()=>{let w=document.getElementById('welcome');if(w){w.style.opacity=0;setTimeout(()=>w.remove(),800)}},3500)</script></html>
